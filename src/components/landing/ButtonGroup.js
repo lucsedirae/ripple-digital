@@ -12,9 +12,9 @@ const ButtonGroup = () => {
       <a href="#" className="btn btn-landing">
         Portfolio
       </a>
-      <a href="#" className="btn btn-landing">
+      <AnchorLink href="#about" className="btn btn-landing">
         About
-      </a>
+      </AnchorLink>
     </Fragment>
   );
 };

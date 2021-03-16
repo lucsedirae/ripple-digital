@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "./App.css";
 
 //* Custom components
+import About from "./components/about/About"
 import Contact from "./components/contact/Contact";
 import Landing from "./components/landing/Landing";
 
@@ -20,6 +21,8 @@ function App() {
       <Landing />
       <Spacer />
       <Contact />
+      <Spacer />
+      <About />
     </div>
   );
 }
