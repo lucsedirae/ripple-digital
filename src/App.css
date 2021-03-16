@@ -1,38 +1,221 @@
-.App {
+/*
+COLORS:
+Light blue: #B5E6FB
+Medium yellow: #68CEFA
+Dark yellow: #54A4C7
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  color: black;
+  padding: 3rem;
+  background-color: grey;
+}
+
+.box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.brand {
+  font-family: "Indie Flower", cursive;
   color: white;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  animation-name: fadeIn;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-in;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-sub {
+  margin-top: -1.5rem;
+  cursor: default;
+  animation-name: fadeIn;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-in;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition: color 0.15s, text-shadow 0.35s;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  text-shadow: 1px 1px 3px black;
+  color: orange;
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  text-shadow: 2px 2px 6px black;
+  color: orange;
+}
+
+.btn-landing {
+  animation-name: fadeIn;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-in;
+  display: block;
+}
+
+.btn-submit {
+  padding: 0.5rem;
+  font-family: "Recursive", sans-serif;
+  cursor: pointer;
+}
+
+.form-field {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-textarea {
+  height: 10rem;
+  width: 90%;
+  resize: none;
+}
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(181, 230, 251, 0.8),
+      rgba(84, 164, 199, 0.8)
+    ),
+    url("/src/img/richmond.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
+}
+
+.header-inverted {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(181, 230, 251, 0.8),
+      rgba(84, 164, 199, 0.8)
+    ),
+    url("/src/img/richmond.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(50% 0, 100% 15vh, 100% 100%, 0% 100%, 0 25vh, 0% 15vh);
+  margin-top: 5rem;
+}
+
+.heading-primary {
+  color: #fff;
+  backface-visibility: hidden;
+  cursor: default;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+  text-shadow: 1px 1px 3px black;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+  margin-top: -1.5rem;
+  display: block;
+  font-size: 2rem;
+  color: black;
+  width: 150%;
+  animation-name: fadeIn;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-in;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary {
+  color: #fff;
+  backface-visibility: hidden;
+  cursor: default;
+}
+
+.heading-secondary-main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Indie Flower", cursive;
+  text-shadow: 1px 1px 3px black;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.hidden-link {
+  text-decoration: none;
+}
+
+.hidden-link:link,
+.hidden-link:visited {
+  color: black;
+}
+
+.input {
+  padding: 1rem;
+}
+
+.main-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
   }
-  to {
-    transform: rotate(360deg);
+
+  60% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
