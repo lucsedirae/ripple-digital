@@ -7,11 +7,12 @@ import "./App.css";
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact";
 import Landing from "./components/landing/Landing";
+import Portfolio from "./components/portfolio/Portfolio"
 
 //* Styled components
 const Spacer = styled.div`
   display: block;
-  height: 5rem;
+  height: 7rem;
 `;
 
 //* Exported component
@@ -21,6 +22,8 @@ function App() {
       <Landing />
       <Spacer />
       <Contact />
+      <Spacer />
+      <Portfolio/>
       <Spacer />
       <About />
     </div>

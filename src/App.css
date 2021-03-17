@@ -29,6 +29,14 @@ body {
   background-color: grey;
 }
 
+.arrow-icon {
+  width: 3rem;
+  text-align: center;
+  display: inline;
+  border: none;
+  background:none;
+}
+
 .box {
   text-align: center;
 }
@@ -115,7 +123,21 @@ body {
 }
 
 .header-inverted {
-  height: 90vh;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(181, 230, 251, 0.8),
+      rgba(84, 164, 199, 0.8)
+    ),
+    url("/src/img/richmond.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(50% 0, 100% 15vh, 100% 100%, 0% 100%, 0 25vh, 0% 15vh);
+  margin-top: 5rem;
+}
+
+.header-portfolio {
+  height: 95rem;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -192,6 +214,10 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.thumbnail {
+  width: 100%;
 }
 
 @keyframes moveInLeft {

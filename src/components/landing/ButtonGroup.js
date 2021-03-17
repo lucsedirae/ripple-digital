@@ -9,9 +9,9 @@ const ButtonGroup = () => {
       <AnchorLink href="#contact" className="btn btn-landing">
         Contact
       </AnchorLink>
-      <a href="#" className="btn btn-landing">
+      <AnchorLink href="#portfolio" className="btn btn-landing">
         Portfolio
-      </a>
+      </AnchorLink>
       <AnchorLink href="#about" className="btn btn-landing">
         About
       </AnchorLink>
