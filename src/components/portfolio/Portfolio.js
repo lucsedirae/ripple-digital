@@ -10,7 +10,11 @@ const TextWrapper = styled.div`
   text-align: center;
   padding: 1rem;
   background-color: rgba(240, 240, 240, 0.6);
-  margin: 1rem;
+  display: block;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 `;
 
 const PaginatorWrap = styled.div`
@@ -25,6 +29,11 @@ const CardBox = styled.div`
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  display: block;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 `;
 
 //* Exported component
@@ -49,6 +58,7 @@ const Portfolio = () => {
         <TextWrapper>
           <p>A collection of completed projects</p>
         </TextWrapper>
+        <CardBox>
         <PaginatorWrap>
           <button className="arrow-icon" onClick={leftClick}>
             <img src="/img/left-arrow.svg" alt="right arrow" />
@@ -57,7 +67,6 @@ const Portfolio = () => {
             <img src="/img/right-arrow.svg" alt="right arrow" />
           </button>
         </PaginatorWrap>
-        <CardBox>
           <Card page={page} />
         </CardBox>
       </header>

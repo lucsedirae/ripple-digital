@@ -7,19 +7,18 @@ const TextWrapper = styled.div`
   text-align: center;
   padding: 1rem;
   background-color: rgba(240, 240, 240, 0.6);
-  margin: 1rem;
+  display: block;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 `;
-
-const ImageWrapper = styled.div`
-  max-width: 100rem;
-  padding:1rem;
-`
 
 //* Exported component
 const About = () => {
   return (
     <Fragment>
-      <header className="header-inverted">
+      <header className="header-about">
         <div className="box" id="about">
           <h1 className="heading-secondary heading-secondary-main">About</h1>
         </div>

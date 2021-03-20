@@ -6,6 +6,7 @@ import styled from "styled-components";
 const FormWrapper = styled.div`
   text-align: center;
   padding: 1rem;
+  width:100%;
 `;
 
 const ContactForm = () => {

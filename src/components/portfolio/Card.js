@@ -24,11 +24,11 @@ const Card = ({ page }) => {
   const index = page - 1;
   return (
     <Fragment>
+      <TextWrapper>
       <h1>{data[index].name}</h1>
       <ImgWrapper>
         <img src={data[index].screenshot} className="thumbnail" />
       </ImgWrapper>
-      <TextWrapper>
         <p>{data[index].description}</p>
         <p>
           <a href={data[index].deployedURL} target="_blank">

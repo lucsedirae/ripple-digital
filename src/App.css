@@ -138,8 +138,25 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
 }
 
-.header-inverted {
-  height: 95vh;
+.header-about {
+  height: fit-content;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(181, 230, 251, 0.8),
+      rgba(84, 164, 199, 0.8)
+    ),
+    url("/src/img/richmond.jpg");
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-contact {
+  height: fit-content;
+
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -153,7 +170,7 @@ body {
 }
 
 .header-portfolio {
-  height: 100rem;
+  height: fit-content;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -161,9 +178,10 @@ body {
     ),
     url("/src/img/richmond.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   margin-top: 5rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .heading-primary {
@@ -262,3 +280,4 @@ body {
     opacity: 1;
   }
 }
+
