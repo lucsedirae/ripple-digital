@@ -11,7 +11,7 @@ const TextWrapper = styled.div`
   padding: 1rem;
   background-color: rgba(240, 240, 240, 0.6);
   display: block;
-  width: 40rem;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -30,7 +30,7 @@ const CardBox = styled.div`
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: 40rem;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;

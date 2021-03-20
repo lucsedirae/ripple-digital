@@ -140,7 +140,7 @@ body {
 
 .header-about {
   height: fit-content;
-
+  width: fit-content;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -156,7 +156,7 @@ body {
 
 .header-contact {
   height: fit-content;
-
+  /* width: fit-content; */
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -171,6 +171,7 @@ body {
 
 .header-portfolio {
   height: fit-content;
+  width: fit-content;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -281,3 +282,10 @@ body {
   }
 }
 
+@media only screen and (min-width: 440px) {
+  .form-textarea {
+    height: 10rem;
+    width: 60%;
+    resize: none;
+  }
+}
