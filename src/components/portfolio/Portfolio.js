@@ -40,7 +40,7 @@ const Portfolio = () => {
 
   return (
     <Fragment>
-      <header className="header-portfolio" style={{ paddingTop: "7rem" }}>
+      <header className="header-portfolio">
         <div className="box" id="portfolio">
           <h1 className="heading-secondary heading-secondary-main">
             Portfolio

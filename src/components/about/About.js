@@ -10,11 +10,16 @@ const TextWrapper = styled.div`
   margin: 1rem;
 `;
 
+const ImageWrapper = styled.div`
+  max-width: 100rem;
+  padding:1rem;
+`
+
 //* Exported component
 const About = () => {
   return (
     <Fragment>
-      <header className="header-inverted" style={{ paddingTop: "7rem" }}>
+      <header className="header-inverted">
         <div className="box" id="about">
           <h1 className="heading-secondary heading-secondary-main">About</h1>
         </div>

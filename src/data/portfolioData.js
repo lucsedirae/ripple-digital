@@ -1,6 +1,15 @@
 const portfolioData = [
   {
     id: 1,
+    name: "React Password Generator",
+    screenshot: "/img/pword.png",
+    description:
+      "This is a simple password generator app built in ReactJS.",
+    deployedURL: "https://practical-goldwasser-907445.netlify.app/",
+    githubURL: "https://github.com/lucsedirae/react-pword-gen"
+  },
+  {
+    id: 2,
     name: "Pitch",
     screenshot: "/img/pitch.png",
     description:
@@ -9,7 +18,7 @@ const portfolioData = [
     githubURL: "https://github.com/lucsedirae/deep-cuts"
   },
   {
-    id: 2,
+    id: 3,
     name: "Open House CRM",
     screenshot: "/img/openhouse.png",
     description:

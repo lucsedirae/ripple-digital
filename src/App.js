@@ -6,6 +6,7 @@ import "./App.css";
 //* Custom components
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact";
+import Footer from "./components/layout/Footer"
 import Landing from "./components/landing/Landing";
 import Portfolio from "./components/portfolio/Portfolio"
 
@@ -18,7 +19,7 @@ const Spacer = styled.div`
 //* Exported component
 function App() {
   return (
-    <div className="App">
+    <div>
       <Landing />
       <Spacer />
       <Contact />
@@ -26,6 +27,8 @@ function App() {
       <Portfolio/>
       <Spacer />
       <About />
+      <Spacer />
+      <Footer/>
     </div>
   );
 }

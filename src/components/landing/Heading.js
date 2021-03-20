@@ -8,6 +8,7 @@ const Heading = () => {
       <h1 className="heading-primary">
         <span className="heading-primary-main">Ripple</span>
         <span className="heading-primary-sub">Digital Development</span>
+        
       </h1>
     </Fragment>
   );

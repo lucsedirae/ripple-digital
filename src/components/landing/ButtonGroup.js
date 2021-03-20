@@ -1,6 +1,11 @@
 //* Dependencies
 import React, { Fragment } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import styled from "styled-components"
+
+const ButtonWrapper = styled.div`
+  text-align:center;
+`
 
 //* Exported component
 const ButtonGroup = () => {

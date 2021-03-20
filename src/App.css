@@ -26,15 +26,31 @@ body {
   box-sizing: border-box;
   color: black;
   padding: 3rem;
-  background-color: grey;
+  background-color: rgb(190, 190, 190);
 }
 
-.arrow-icon {
+.arrow-icon,
+.arrow-icon:visited,
+.arrow-icon:focus {
   width: 3rem;
   text-align: center;
-  display: inline;
+  display: inline-block;
   border: none;
-  background:none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow-icon:active {
+  width: 3rem;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
 }
 
 .box {
@@ -132,12 +148,12 @@ body {
     url("/src/img/richmond.jpg");
   background-size: cover;
   background-position: bottom;
-  clip-path: polygon(50% 0, 100% 15vh, 100% 100%, 0% 100%, 0 25vh, 0% 15vh);
   margin-top: 5rem;
+  padding-top: 1rem;
 }
 
 .header-portfolio {
-  height: 95rem;
+  height: 100rem;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -146,14 +162,15 @@ body {
     url("/src/img/richmond.jpg");
   background-size: cover;
   background-position: bottom;
-  clip-path: polygon(50% 0, 100% 15vh, 100% 100%, 0% 100%, 0 25vh, 0% 15vh);
   margin-top: 5rem;
+  padding-top: 1rem;
 }
 
 .heading-primary {
   color: #fff;
   backface-visibility: hidden;
   cursor: default;
+  transform: translate(-3rem, 0);
 }
 
 .heading-primary-main {

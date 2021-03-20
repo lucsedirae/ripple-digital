@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <Fragment>
-      <header className="header-inverted" style={{ paddingTop: "7rem" }}>
+      <header className="header-inverted" >
         <div className="box" id="contact">
           <h1 className="heading-secondary heading-secondary-main">Contact</h1>
         </div>
