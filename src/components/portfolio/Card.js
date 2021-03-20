@@ -8,7 +8,7 @@ const TextWrapper = styled.div`
   text-align: center;
   padding: 1rem;
   background-color: rgba(240, 240, 240, 0.6);
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   margin-top: 1rem;
 `;
 
@@ -21,22 +21,26 @@ const ImgWrapper = styled.div`
 
 //* Exported component
 const Card = ({ page }) => {
-  const index = page - 1;
+  const item = data[page - 1];
   return (
     <Fragment>
       <TextWrapper>
-      <h1>{data[index].name}</h1>
-      <ImgWrapper>
-        <img src={data[index].screenshot} className="thumbnail" />
-      </ImgWrapper>
-        <p>{data[index].description}</p>
+        <h1>{item.name}</h1>
+        <ImgWrapper>
+          <img
+            src={item.screenshot}
+            className="thumbnail"
+            alt={"Screenshot of" + item.name}
+          />
+        </ImgWrapper>
+        <p>{item.description}</p>
         <p>
-          <a href={data[index].deployedURL} target="_blank">
+          <a href={item.deployedURL} target="_blank" rel="noreferrer">
             Deployed Project
           </a>
         </p>
         <p>
-          <a href={data[index].githubURL} target="_blank">
+          <a href={item.githubURL} target="_blank" rel="noreferrer">
             GitHub Link
           </a>
         </p>

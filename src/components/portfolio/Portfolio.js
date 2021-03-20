@@ -2,8 +2,10 @@
 import React, { Fragment, useState } from "react";
 import styled from "styled-components";
 import data from "../../data/portfolioData";
+
 //* Custom components
 import Card from "./Card";
+import Paginator from "./Paginator";
 
 //* Styled components
 const TextWrapper = styled.div`
@@ -15,13 +17,6 @@ const TextWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-`;
-
-const PaginatorWrap = styled.div`
-  padding: 1rem;
-  position: relative;
-  max-width: 10rem;
-  margin: 0 auto;
 `;
 
 const CardBox = styled.div`
@@ -39,9 +34,7 @@ const CardBox = styled.div`
 //* Exported component
 const Portfolio = () => {
   const [page, setPage] = useState(data.length);
-
-  console.log("Data Length: ", data.length);
-
+  
   const leftClick = () => (page > 1 ? setPage(page - 1) : setPage(data.length));
 
   const rightClick = () =>
@@ -59,14 +52,7 @@ const Portfolio = () => {
           <p>A collection of completed projects</p>
         </TextWrapper>
         <CardBox>
-        <PaginatorWrap>
-          <button className="arrow-icon" onClick={leftClick}>
-            <img src="/img/left-arrow.svg" alt="right arrow" />
-          </button>
-          <button className="arrow-icon" onClick={rightClick}>
-            <img src="/img/right-arrow.svg" alt="right arrow" />
-          </button>
-        </PaginatorWrap>
+          <Paginator leftClick={leftClick} rightClick={rightClick} />
           <Card page={page} />
         </CardBox>
       </header>

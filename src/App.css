@@ -1,8 +1,8 @@
 /*
 COLORS:
 Light blue: #B5E6FB
-Medium yellow: #68CEFA
-Dark yellow: #54A4C7
+Medium blue: #68CEFA
+Dark blue: #54A4C7
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap");
@@ -27,6 +27,10 @@ body {
   color: black;
   padding: 3rem;
   background-color: rgb(190, 190, 190);
+}
+
+.arrow {
+  color: red;
 }
 
 .arrow-icon,
@@ -156,7 +160,6 @@ body {
 
 .header-contact {
   height: fit-content;
-  /* width: fit-content; */
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -171,7 +174,6 @@ body {
 
 .header-portfolio {
   height: fit-content;
-  width: fit-content;
   background-image: linear-gradient(
       to right,
       rgba(181, 230, 251, 0.8),
@@ -194,7 +196,7 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 700;
   font-family: "Indie Flower", cursive;
   text-shadow: 1px 1px 3px black;
@@ -250,6 +252,7 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-top: 5rem;
 }
 
 .thumbnail {
@@ -287,5 +290,28 @@ body {
     height: 10rem;
     width: 60%;
     resize: none;
+  }
+
+  .heading-primary-main {
+    display: block;
+    font-size: 9rem;
+    font-weight: 700;
+    font-family: "Indie Flower", cursive;
+    text-shadow: 1px 1px 3px black;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .heading-primary-sub {
+    margin-top: -1.5rem;
+    display: block;
+    font-size: 3rem;
+    color: black;
+    width: 150%;
+    animation-name: fadeIn;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in;
+    margin-bottom: 2rem;
   }
 }
